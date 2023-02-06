@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blinkit App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./utility.css" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+
+        <nav class="border-1-bottom border-grey border-solid">
+            <div class="flex flex-align-items-center">
+                <img 
+                    class="border-1-right border-grey border-solid padding-1_5" 
+                    src="./assets/logo.svg" 
+                    alt="Blinkit Logo" 
+                />
+
+                <div class="flex flex-col flex-align-items-center padding-x-1">
+                    <p class="bold">
+                        Delivery in 10 minutes
+                    </p>
+                    <p>
+                        Pune, Maharashtra, India
+                    </p>
+                </div>
+
+                <div class="flex flex-align-items-center flex-grow-1 border-1 border-solid border-grey border-radius-0_5">
+                    <img
+                        class="padding-0_5"
+                        src="./assets/search.svg"
+                        alt="Search"
+                    />
+                    <input 
+                        class="width-100 text-base border-none" 
+                        placeholder='Search for "Bread"'
+                    />
+                </div>
+
+                <div class="flex flex-align-items-center padding-x-1">
+                    <a class="btn" href="/login">
+                        <p class="btn__text">
+                            Login
+                        </p>
+                    </a>
+                    <a class="btn btn-filled" href="/cart">
+                        <img 
+                            class="btn__icon" 
+                            src="./assets/shopping-cart.png" 
+                            alt="Shopping Cart" 
+                        />
+                        <p class="btn__text">
+                            My Cart
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="border-1-top border-grey border-solid padding-y-1">
+                <ul class="flex flex-justify-content-center flex-gap-1 list-style-type-none">
+                    <li>
+                        <a class="link" href="/product/vegetable">Vegetables And Fruits</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/dairy">Dairy And Breakfast</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/munchies">Munchiess</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/cold-drinks">Cold Drinks and Juices</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/frozen-food">Instant and Frozen Food</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/drinks">Tea, Coffee and Health Drinks</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/product/bakery">Bakery and Biscuits</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+
+        <div class="flex flex-grow-1 margin-x-auto margin-top-2 border-1 border-solid border-grey width-per-80">
+            <aside class="flex flex-col">
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/exotics.avif"
+                        alt="All" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">All</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 bg-primary-translucent border-1-bottom border-2-left border-solid border-bottom-grey border-left-primary">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/vegetable.avif"
+                        alt="Fresh Vegetables" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Fresh Vegetables</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/fruits.avif"
+                        alt="Fresh Fruits" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Fresh Fruits</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/exotics.avif"
+                        alt="Exotics" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Exotics</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/seasonal.avif"
+                        alt="Seasonal" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Seasonal</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/organic.avif"
+                        alt="Organic and Hydroponic" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Organic and Hydroponic</p>
+                </div>
+                <div class="flex flex-justify-content-center flex-align-items-center padding-y-0_5 padding-x-1 flex-gap-2 border-1-bottom border-solid border-grey">
+                    <img
+                        class="height-20 width-20 pointer-none"
+                        src="./assets/products/sprouts.avif"
+                        alt="Freshly Cut and Sprouts" 
+                    />
+                    <p class="flex-grow-1 text-base pointer-none">Freshly Cut and Sprouts</p>
+                </div>
+            </aside>
+            
+            <main class="flex-grow-1">
+                <header class="flex flex-justify-content-space-between flex-align-items-center border-1-left border-grey border-solid padding-y-1 padding-x-1_5">
+                    <h3 class="bold">
+                        Buy Fresh Vegetables Online
+                    </h3>
+
+                    <div class="flex flex-align-items-center flex-gap-1">
+                        <label>Sort By</label>
+                        <select class="border-1 border-grey text-base color-primary">
+                            <option value="Relevance">Relevance</option>
+                        </select>
+                    </div>
+                </header>
+
+                <div class="border-1-top border-1-left border-solid border-grey grid grid-col-3">
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/potato.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Potato (Batata)
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 15</p>
+                                <p class="strikethough">Rs 20</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/capsicum.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Capsicum
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 55</p>
+                                <p class="strikethough">Rs 69</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/carrot.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Carrot
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 17</p>
+                                <p class="strikethough">Rs 19</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/ginger.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Ginger
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 37</p>
+                                <p class="strikethough">Rs 47</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/okra.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Okra
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 29</p>
+                                <p class="strikethough">Rs 34</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/onion.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Onion
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 32</p>
+                                <p class="strikethough">Rs 41</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col flex-align-items-center padding-1 flex-gap-1 border-1-bottom border-1-right border-solid border-grey">
+                        <p class="padding-0_5 flex-align-self-start border-radius-1 text-sm bg-blue color-white">
+                            15% Off
+                        </p>
+                        <img 
+                            class="width-56 height-56"
+                            src="./assets/vegetables/tomato.avif"
+                            alt="Potato"
+                        />
+                        <p class="bg-primary-translucent text-sm color-primary padding-0_5 flex-align-self-end border-radius-1">
+                            Sourced at 5 A.M.
+                        </p>
+                        <h3 class="flex-align-self-start">
+                            Tomato
+                        </h3>
+                        <p class="chip margin-top-0_5 flex-align-self-start">
+                            1 Kg
+                        </p>
+                        <div class="flex margin-top-1 flex-align-items-center flex-justify-content-space-between width-full">
+                            <div class="flex flex-col">
+                                <p>Rs 15</p>
+                                <p class="strikethough">Rs 19</p>
+                            </div>
+                            
+                            <button class="btn btn-outlined">
+                                Add
+                            </button>
+                        </div>
+                    </article>
+                    
+                </main>
+            </div>
+        </div>
+
+        <footer class="margin-top-10 padding-bottom-1">
+            <section class="flex flex-justify-content-space-around">
+                <div class="text-align-center padding-y-2 padding-x-1 border-1 border-solid border-grey width-80">
+                    <img 
+                        class="width-40" 
+                        src="./assets/superDelivery.webp" 
+                        alt="Superfast Delivery" 
+                    />
+                    <h3 class="bold margin-bottom-2 ">Superfast Delivery</h3>
+                    <p>
+                        Get your order delivered to your doorstep at the earliest from stores near you.
+                    </p>
+                </div>
+
+                <div class="text-align-center padding-y-2 padding-x-1 border-1 border-solid border-grey width-80">
+                    <img 
+                        class="width-40" 
+                        src="./assets/superDelivery.webp" 
+                        alt="Superfast Delivery" 
+                    />
+                    <h3 class="bold margin-bottom-2">Best Prices and Offers</h3>
+                    <p>
+                        Best price destination with offers directly from the manufacturers.
+                    </p>
+                </div>
+
+                <div class="text-align-center padding-y-2 padding-x-1 border-1 border-solid border-grey width-80">
+                    <img 
+                        class="margin-bottom-2 width-40" 
+                        src="./assets/superDelivery.webp" 
+                        alt="Superfast Delivery" 
+                    />
+                    <h3 class="bold margin-bottom-2">Wide Assortment</h3>
+                    <p>
+                        Choose from 5000+ products across food, personal care, household and other categories.
+                    </p>
+                </div>
+            </section>
+
+            <section class="width-per-80 margin-y-3 margin-x-auto text-align-center">
+                “Blinkit” is owned & managed by "Blink Commerce Private Limited" (formerly known as Grofers India Private Limited) and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.
+            </section>
+
+            <section class="flex flex-justify-content-space-around flex-align-items-center">
+                <p class="width-100">
+                    © Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023
+                </p>
+
+                <div class="flex flex-align-items-center flex-gap-1">
+                    <p>Download App</p>
+                    <img 
+                        class="width-40" 
+                        src="./assets/apple-store.webp" 
+                        alt="Download on Apple Store" 
+                    />
+                    <img 
+                        class="width-40" 
+                        src="./assets/google-play.webp" 
+                        alt="Download on Google Store" 
+                    />
+                </div>
+
+                <nav class="flex flex-justify-content-center flex-gap-1">
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link"
+                        href="https://www.instagram.com"
+                    >
+                        <img
+                            class="width-16"
+                            src="./assets/social/instagram.svg"
+                            alt="Instagram"
+                        />
+                    </a>
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link"
+                        href="https://www.facebook.com"
+                    >
+                        <img
+                            class="width-16"
+                            src="./assets/social/facebook.svg"
+                            alt="Facebook"
+                        />
+                    </a>
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link"
+                        href="https://www.linkedin.com"
+                    >
+                        <img
+                            class="width-16"
+                            src="./assets/social/linkedin-circled.svg"
+                            alt="LinkedIn"
+                        />
+                    </a>
+                    <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link"
+                        href="https://www.twitter.com"
+                    >
+                        <img
+                            class="width-16"
+                            src="./assets/social/twitter.svg"
+                            alt="Twitter"
+                        />
+                    </a>
+                </nav>
+            </section>
+        </footer>
+
+    </body>
+</html>
